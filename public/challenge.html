@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Waste Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>♻️ E-Waste Challenge</h1>
+    <nav>
+      <a href="/">🏡 Home</a>
+      <a href="/about">ℹ️ About</a>
+      <a href="/contact">📬 Contact</a>
+    </nav>
+  </header>
+
+  <section class="challenge-section">
+    <h2>🌱 This Month's Challenge: Recycle 5 items!</h2>
+    <p>Track your progress and earn a badge! Ready to take action?</p>
+    <button id="joinBtn" class="btn">Join Challenge</button>
+
+    <div id="progressArea" style="display:none;">
+      <p>Items Recycled: <span id="count">0</span>/5</p>
+      <button id="addItemBtn" class="btn">+ Add Recycled Item</button>
+      <div id="completionMessage" style="display:none; margin-top: 20px;">🎉 You completed the challenge!</div>
+      <button id="shareBtn" class="btn" style="margin-top: 10px;">📢 Share Achievement</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌍 Keep making the planet greener! 💚</p>
+  </footer>
+
+  <script src="challenge.js"></script>
+</body>
+</html>

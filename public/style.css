@@ -1,0 +1,442 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#e3f9e5, #ffffff);
+    color: #2c3e50;
+}
+
+header {
+    background: #2e7d32;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: #1d3d1d; /* a strong leafy green */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #e8f5e9;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: url("images/background.jpg.jpg") no-repeat center center;
+    background-size: cover;
+    color: #1b5e20;
+    position: relative;
+    overflow:hidden;
+  }
+  
+
+.hero .overlay {
+
+    background-color: rgba(255, 235, 170, 0.3); /* Soft gold, very light */
+    padding: 40px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+
+    
+}
+
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #bcedbc; /* mint green */
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* light shadow to lift it off background */
+  }
+  
+  
+
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #43a047;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #388e3c;
+}
+
+.features {
+    padding: 50px 20px;
+    background: #f1f8e9;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 28px;
+    color: #33691e;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #2e7d32;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+body {
+    background-image: url("images/green.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-title {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    color: #1c2b1c; /* Dark earthy green */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .about-text {
+    color: #222; 
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px auto;
+    max-width: 800px;
+  }
+  
+  .about-sub {
+    color: #2d3d2d;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .about-list {
+    color: #2f2f2f;
+    font-size: 18px;
+    margin-left: 0;
+    list-style-type: disc;
+    padding-left: 30px;
+  }
+  
+  
+  #about-section {
+    background: url("images/about-green.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+    animation: fadeUp 1.5s ease-out;
+  }
+  
+  .logo-img {
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .logo-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  
+  .logo-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form {
+    padding: 60px 20px;
+    background: url("images/contact-bg.jpg") no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Lora', serif;
+  }
+  
+  .contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #c8facc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f1f8e9;
+    color: #2c3e50;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .contact-form .btn {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #1b5e20;
+  }
+  
+.challenge-section {
+  padding: 50px 20px;
+  background: #f0fdf4;
+  text-align: center;
+  color: #1b5e20;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.challenge-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.challenge-section .btn {
+  background: #43a047;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.challenge-section .btn:hover {
+  background: #388e3c;
+}
+  
+
+#fun-fact-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #f9fbe7;
+    color: #33691e;
+    padding: 20px;
+    border: 2px solid #cddc39;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    max-width: 300px;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+  }
+  
+  #fun-fact-popup.hidden {
+    display: none;
+  }
+  
+  #fun-fact-popup button {
+    background: #8bc34a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #fun-fact-popup button:hover {
+    background: #689f38;
+  }
+  .eco-buddy {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 80px;
+    cursor: pointer;
+    z-index: 999;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .buddy-message {
+    background-color: #f1f8e9;
+    border: 2px solid #a5d6a7;
+    color: #33691e;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 160px;
+    text-align: center;
+    display: none;
+  }
+    
+
+  .spin-wheel {
+    text-align: center;
+    padding: 60px 20px;
+    background: #5aa32a;
+  }
+  
+  #wheel {
+    margin-top: 20px;
+    border: 5px dashed #66bb6a;
+    border-radius: 50%;
+  }
+  
+  #wheel.spin {
+    transition: transform 4s ease-out;
+  }
+  
+  #resultMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .point-system {
+    background-color: #e8f5e9;
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .point-system h2 {
+    color: #2e7d32;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
+  }
+  
+  .point-system ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .point-system li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2c3e50;
+  }
+  
+
+  .auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .auth-buttons .btn {
+    background-color: #2e7d32;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .auth-buttons .btn:hover {
+    background-color: #1b5e20;
+  }
+  

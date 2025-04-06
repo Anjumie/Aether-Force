@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2 id="welcomeUser">Welcome back!</h2>
+    <button id="recycleBtn">♻️ I Recycled an Item!</button>
+    <p id="pointMsg"></p>
+
+    <p>🌟 Points Earned: <span id="userPoints">0</span></p>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("userName") || "User";
+    let points = parseInt(localStorage.getItem("userPoints")) || 0;
+  
+    const welcomeEl = document.getElementById("welcomeUser");
+    const pointsEl = document.getElementById("userPoints");
+    const btn = document.getElementById("recycleBtn");
+    const msg = document.getElementById("pointMsg");
+  
+    welcomeEl.textContent = `Welcome back, ${name}!`;
+    pointsEl.textContent = points;
+  
+    btn.addEventListener("click", () => {
+      points += 10;
+      localStorage.setItem("userPoints", points);
+      pointsEl.textContent = points;
+      msg.textContent = "+10 points added!";
+      msg.style.color = "#2e7d32";
+      msg.style.fontWeight = "bold";
+  
+      // Fun animation ✨
+      msg.style.opacity = "1";
+      msg.style.transition = "opacity 1s";
+      setTimeout(() => {
+        msg.style.opacity = "0";
+      }, 1000);
+    });
+  </script>
+  
+</body>
+</html>

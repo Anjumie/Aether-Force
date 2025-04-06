@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Waste Management Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 E-Waste Management Platform ♻️</h1>
+    <div class="logo-container">
+        <img src="images/aether.jpg" alt="E-Waste Logo" class="logo-circle">
+    </div>
+    <div id="fun-fact-popup" class="hidden">
+        <p id="fun-fact-text">Did you know? Recycling 1 million laptops saves as much energy as 3,500 homes use in a year!</p>
+        <button onclick="closeFact()">Got it!</button>
+      </div>
+      
+    <nav>
+      <a href="/">🏡 Home</a>
+      <a href="/about">ℹ️ About</a>
+      <a href="/contact">📬 Contact</a>
+    </nav>
+  </header>
+
+  <section class="challenge">
+    <h2>♻️ Monthly E-Waste Challenge</h2>
+    <p>Can you recycle 5 items this month? Join now and track your impact!</p>
+    <button id="joinBtn" class="btn">Join Challenge</button>
+  
+    <div id="progressArea" style="display:none; margin-top: 20px;">
+      <p>Items Recycled: <span id="count">0</span>/5</p>
+      <button id="addItemBtn" class="btn">I Recycled One!</button>
+    <div id="completionMessage" style="display:none; margin-top: 20px;">
+        <p style="font-size: 24px; color: #2e7d32; font-weight: bold;">
+          🎉 Woohoo! You’ve officially crushed the challenge! ♻️🌟<br>
+          Mother Earth is smiling thanks to you 🌍💚
+        </p>
+        <button id="shareBtn" class="btn">📣 Brag a Little – Share!</button>
+    </div>
+      
+    </div>
+  </section>
+  <script src="challenge.js"></script>
+
+  
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>Welcome to the E-Waste Hub 🌏</h2>
+      <p>Together, let's reduce waste and recycle responsibly ♻️✨</p>
+      <a href="#features" class="btn">Learn More</a>
+    </div>
+  </section>
+  
+  <section id="about-section">
+    <section id="about-section">
+        <h3>About Us 💡</h3>
+        <p>Welcome to our planet-saving operation! 🧤⚡ We’re not just coding… we're composting bugs (okay not real ones... yet 🐛).</p>
+        <p>We started this project because the Earth gave us “low battery” warnings 🔋 and we thought — hey, time to plug in and clean up some e-waste!</p>
+        <p>Our mission is simple: make recycling less boring and more “heck yeah!”</p>
+        <p>Got an old phone? Laptop? TV remote from 2002? Don't toss it — let's give it the retirement it deserves. Preferably with less landfill and more flair. ✨🌍</p>
+      </section>
+      
+<section class="spin-wheel">
+    <h2>🎁 Spin the Wheel & Win!</h2>
+    <div class="wheel-container">
+      <canvas id="wheel" width="300" height="300"></canvas>
+      <button onclick="spinWheel()" class="btn">🎉 Spin!</button>
+      <p id="resultMessage"></p>
+    </div>
+</section>
+<div class="auth-buttons">
+  <a href="login.html" class="btn">🔐 Login</a>
+  <a href="register.html" class="btn">📝 Register</a>
+</div>
+     
+  <section id="features" class="features">
+    <h3>🌟 Why Choose Us?</h3>
+    <ul>
+      <li>♻️ Find nearby e-waste recycling centers</li>
+      <li>📦 Schedule pickups for e-waste collection</li>
+      <li>🧠 Learn how to recycle smartly</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made with 💚 by Team Aether-Force — 2025 Google Solution Challenge</p>
+  </footer>
+  <script src="fun-facts.js"></script>
+  <div class="eco-buddy" onclick="talkToBuddy()">
+    🐢
+    <div class="buddy-message" id="buddyMessage">Click me for a tip!</div>
+  </div>
+  <script src="eco-buddy.js"></script>
+  <script src="spin-wheel.js"></script>
+</body>
+</html>
+
+
+
+
