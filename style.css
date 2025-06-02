@@ -42,7 +42,7 @@ nav a:hover {
 .hero {
     padding: 60px 20px;
     text-align: center;
-    background: url("images/background.jpg.jpg") no-repeat center center;
+    background: url("E-WASTE-PLATFORM/images/background.jpg.jpg") no-repeat center center;
     background-size: cover;
     color: #1b5e20;
     position: relative;
@@ -125,7 +125,7 @@ footer {
 }
 
 body {
-    background-image: url("images/green.jpg");
+    background-image: url("E-WASTE-PLATFORM/images/green.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -179,7 +179,7 @@ body {
   
   
   #about-section {
-    background: url("images/about-green.jpg") no-repeat center center;
+    background: url("E-WASTE-PLATFORM/images/about-green.jpg") no-repeat center center;
     background-size: cover;
     padding: 60px 20px;
     color: #fff;
