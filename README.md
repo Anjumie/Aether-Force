@@ -46,3 +46,9 @@ A web platform for managing e-waste recycling and disposal.
 git add README.md
 git commit -m "Improve README with project details"
 git push
+
+## 🖥️ Local Setup (Required for Full Features)
+1. Clone repo:
+   ```bash
+   git clone https://github.com/Anjumie/Aether-Force.git
+   cd Aether-Force
